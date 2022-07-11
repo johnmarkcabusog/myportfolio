@@ -1,0 +1,76 @@
+.home-container {
+    height: 600px;
+    background-color: aliceblue;
+    display: flex;
+    color: black;
+    align-items: center;
+     /* cross-axis alignment or vertically */
+    justify-content: flex-start; 
+     /* main-axis alignment or horizontally */
+     /* gap:30px;  */
+    /* margin between the flex items */
+}
+.el{
+        /* We set flex basis to determine sizes */
+    /* flex-shrink: 1; */
+        /* By default flex-shrink is 1 or true, meaning if the total width exceeds the container, then flex items are adjusted to fit the screen
+        Setting it to 0 will overflow the items from the container   */
+    /* flex-grow:1; */
+        /* By default flex grow is 0, if set to 1, then all the flex items are equally divided to fit size */
+
+    /* SHORT HAND flex: grow shrink spaces */
+    flex: 1 0 200px;
+    
+
+}
+
+.general-information {
+    background-color: greenyellow;
+    /* align-self: stretch;  */
+    order:1;
+    /* flex-basis:200px; */
+        /* use align self to specifically align a single item */
+    /* flex-grow:1 */
+        /* Flex grow in flex items determine the size portiono it takes in the stretch */
+}
+.polygons {
+    background-color: beige;
+    
+    /* align-self: flex-end; */
+    order:0;
+         /* The order determines the positions of items from left to right; */
+    /* flex-grow:2; */
+}
+
+
+/* Grid item lessons */
+.grid-container {
+    background-color: rebeccapurple;
+    display: grid;
+    grid-template-columns: 100px  1fr 2fr;
+    /* grid-template-columns: repeat(3, 1fr); */
+        /* The repeat function is used to shorten the code  */
+    /* fr is used  to fill the entire columns */
+    grid-template-rows: 50px;
+    /* gap: 20px;  */
+    column-gap: 10px;
+    row-gap: 10px;
+}   
+
+.grid1{
+    height: 30px;
+    background-color: blue;
+}
+.grid2{
+    background-color: blue;
+}
+
+.grid3{
+    background-color: blue;
+}
+
+.grid4{
+    background-color: red;
+    grid-column: 2/  3;
+    grid-row: 2/3;
+}

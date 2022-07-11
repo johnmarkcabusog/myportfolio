@@ -1,11 +1,10 @@
-.App {
+html {
   text-align: center;
 }
-
 body{
   background-color: #041c32;
   color: white;
-  font-family: sans-serif;
+  font-family:  'Letter Gothic Std', sans-serif;
 }
 
 .App-logo {
