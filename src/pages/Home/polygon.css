@@ -1,0 +1,214 @@
+
+ /* :nth-child() An+B , where a is the step size, B is the offset, n is non negative integers starting from 0  */
+.polygon-container > div:nth-child(22n+1){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+2){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+3){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+4){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+5){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+6){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+7){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+8){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+9){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+10){
+    margin-left: 50px;
+}
+.polygon-container > div:nth-child(22n+11){
+    margin-left: 50px;
+}
+
+
+
+.polygon-container{
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(10, 50px);
+    justify-content: center;
+    --s: 42px;  
+    --m: 0px; 
+    --bigger-s:45px;
+    --biggest-s:100px;
+    --small-s:35px;
+    --medium-s:40px;
+}
+ /* --s, size is like a variable declaration that can be used in child components */
+
+.polygon-item{
+    width: var(--s);
+    margin: var(--m);
+    height: calc(var(--s)*1.1547); 
+    display: inline-block;
+    font-size:initial;
+    clip-path: polygon(0% 25%, 0% 75%, 50% 100%, 100% 75%, 100% 25%, 50% 0%);
+    background: #041c32;
+    margin-bottom: calc(var(--m) - var(--s)*0.2885); 
+    align-self: center;
+    justify-self: center;
+    /* transform: rotateY(0deg) rotate(90deg);  */
+}
+.polygon-container > div:nth-child(1),
+.polygon-container > div:nth-child(3),
+.polygon-container > div:nth-child(6),
+.polygon-container > div:nth-child(8),
+.polygon-container > div:nth-child(95),
+.polygon-container > div:nth-child(53){
+    width: var(--small-s);
+    height: calc(var(--small-s)*1.1547); 
+}
+
+.polygon-container > div:nth-child(13),
+.polygon-container > div:nth-child(15),
+.polygon-container > div:nth-child(17),
+.polygon-container > div:nth-child(19),
+.polygon-container > div:nth-child(52),
+.polygon-container > div:nth-child(84){
+    width: var(--medium-s);
+    height: calc(var(--medium-s)*1.1547); 
+}
+/*  
+-webkit-animation: fadeIn 5s;
+-moz-animation: fadeIn 5s;
+-o-animation: fadeIn 5s;
+-ms-animation: fadeIn 5s; */
+.polygon-container > div:nth-child(1){
+    background-color: greenyellow;
+    animation: fadeIn 1.2s;
+}
+/* 
+.polygon-container > div:nth-child(1):hover{
+    background-color:greenyellow;
+} */
+.polygon-container > div:nth-child(13), .polygon-container > div:nth-child(3){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 1.4s;
+}
+
+.polygon-container > div:nth-child(24){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 1.6;
+}
+.polygon-container > div:nth-child(46),  .polygon-container > div:nth-child(36),  .polygon-container > div:nth-child(25),  .polygon-container > div:nth-child(15){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 1.8s;
+}
+.polygon-container > div:nth-child(58), .polygon-container > div:nth-child(47),  .polygon-container > div:nth-child(37),  .polygon-container > div:nth-child(26){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 2s;
+
+}
+.polygon-container > div:nth-child(59),  .polygon-container > div:nth-child(48),  .polygon-container > div:nth-child(38), .polygon-container > div:nth-child(27), .polygon-container > div:nth-child(17), .polygon-container > div:nth-child(6){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 2.2s;
+}
+.polygon-container > div:nth-child(60), .polygon-container > div:nth-child(49),  .polygon-container > div:nth-child(39){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 2.4s;
+
+}
+.polygon-container > div:nth-child(71), .polygon-container > div:nth-child(61), .polygon-container > div:nth-child(50), .polygon-container > div:nth-child(40), .polygon-container > div:nth-child(29), .polygon-container > div:nth-child(19), .polygon-container > div:nth-child(8){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 2.6s;
+}
+.polygon-container > div:nth-child(72), .polygon-container > div:nth-child(62), .polygon-container > div:nth-child(41){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 2.8s;
+}
+.polygon-container > div:nth-child(84), .polygon-container > div:nth-child(52){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 3s;
+}
+.polygon-container > div:nth-child(95), .polygon-container > div:nth-child(53){
+    background-color: rgb(70, 70, 70,0.7);
+    animation: fadeIn 3.2s ;
+}
+
+.polygon-container > div:nth-child(1), 
+/* .polygon-container > div:nth-child(36),  */
+.polygon-container > div:nth-child(26),
+.polygon-container > div:nth-child(60), 
+.polygon-container > div:nth-child(72), 
+.polygon-container > div:nth-child(95),
+.polygon-container > div:nth-child(29),
+.polygon-container > div:nth-child(8),
+.polygon-container > div:nth-child(58),
+.polygon-container > div:nth-child(53),
+.polygon-container > div:nth-child(36),
+.polygon-container > div:nth-child(50),
+.polygon-container > div:nth-child(6)
+{
+    background-color: greenyellow;
+    animation: blink 3.4s linear infinite;
+    pointer-events: none;
+    
+}
+/* .polygon-container > div:nth-child(36),
+.polygon-container > div:nth-child(37),
+.polygon-container > div:nth-child(38),
+.polygon-container > div:nth-child(39),
+.polygon-container > div:nth-child(40)
+{
+    width: var(--bigger-s);
+    background-color: #0d74a2;;
+    height: calc(var(--bigger-s)*1.1547); 
+}  */
+
+/* .polygon-container > div:nth-child(36):hover,
+.polygon-container > div:nth-child(37):hover,
+.polygon-container > div:nth-child(38):hover,
+.polygon-container > div:nth-child(39):hover,
+.polygon-container > div:nth-child(40):hover
+{
+    width: var(--biggest-s);
+    height: calc(var(--biggest-s)*1.1547); 
+    cursor: pointer;
+}  */
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; background-color:rgb(70, 70, 70,0.7) ;}
+    100% { opacity: 1;background-color: greenyellow; }
+  }
+  
+  @keyframes blink {
+    0% { opacity: 0; background-color:rgb(70, 70, 70,0.7) ;}
+    100% { opacity: 1;background-color: greenyellow; }
+  }
+  
+  /* @-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  } */
+
+/* polygon item count is 36 */

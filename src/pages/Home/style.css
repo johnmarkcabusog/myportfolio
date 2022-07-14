@@ -1,76 +1,152 @@
 .home-container {
+    margin-top: 100px;
     height: 600px;
-    background-color: aliceblue;
     display: flex;
     color: black;
     align-items: center;
      /* cross-axis alignment or vertically */
-    justify-content: flex-start; 
+    justify-content: center; 
      /* main-axis alignment or horizontally */
      /* gap:30px;  */
     /* margin between the flex items */
 }
-.el{
-        /* We set flex basis to determine sizes */
-    /* flex-shrink: 1; */
-        /* By default flex-shrink is 1 or true, meaning if the total width exceeds the container, then flex items are adjusted to fit the screen
-        Setting it to 0 will overflow the items from the container   */
-    /* flex-grow:1; */
-        /* By default flex grow is 0, if set to 1, then all the flex items are equally divided to fit size */
-
-    /* SHORT HAND flex: grow shrink spaces */
-    flex: 1 0 200px;
-    
-
+.polygons{
+    transform: scale(0.8);
 }
 
-.general-information {
-    background-color: greenyellow;
-    /* align-self: stretch;  */
-    order:1;
-    /* flex-basis:200px; */
-        /* use align self to specifically align a single item */
-    /* flex-grow:1 */
-        /* Flex grow in flex items determine the size portiono it takes in the stretch */
+.general-information{
+    animation: showNow 3.2s ;
 }
-.polygons {
-    background-color: beige;
-    
-    /* align-self: flex-end; */
-    order:0;
-         /* The order determines the positions of items from left to right; */
-    /* flex-grow:2; */
-}
-
-
-/* Grid item lessons */
-.grid-container {
-    background-color: rebeccapurple;
+@keyframes showNow {
+    0% { opacity: 0;}
+    100% { opacity: 1; }
+  }
+.gen-info-panel{
     display: grid;
-    grid-template-columns: 100px  1fr 2fr;
-    /* grid-template-columns: repeat(3, 1fr); */
-        /* The repeat function is used to shorten the code  */
-    /* fr is used  to fill the entire columns */
-    grid-template-rows: 50px;
-    /* gap: 20px;  */
-    column-gap: 10px;
-    row-gap: 10px;
-}   
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    gap: 30px;
+    padding: 10px;
+    justify-content: end;
 
-.grid1{
-    height: 30px;
-    background-color: blue;
-}
-.grid2{
-    background-color: blue;
 }
 
-.grid3{
-    background-color: blue;
+.gen-info-content{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 1fr ;
+    gap: 10px;
+    color: #d6d5a8;
+    justify-items: start;
+    text-align: left;
 }
 
-.grid4{
-    background-color: red;
-    grid-column: 2/  3;
+.dev-name{
+    grid-column: 2/5;
+    grid-row: 1/2;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.dev-title{
+    grid-column: 3/5;
     grid-row: 2/3;
+    color: #0d74a2;
+    font-size: 40px;
+    font-weight: bold;
+
+
+}
+.dev-name span{
+    color: #0d74a2;
+}
+.dev-message{
+    grid-column: 4/5;
+    grid-row: 3/4;
+
+}
+
+.line1{
+    grid-column: 1/2;
+    grid-row: 1/4;
+    width: 1px;
+    background-color: rgb(25, 54, 54);
+    margin-left: 20px;
+}
+
+.line3{
+    grid-column: 3/4;
+    grid-row: 3/4;
+    width: 1px;
+    background-color: rgb(25, 54, 54);
+    margin-left: 20px;
+
+}
+
+.line2{
+    grid-column: 2/3;
+    grid-row: 2/4;
+    width: 1px;
+    background: rgb(25, 54, 54);
+    margin-left: 20px;
+
+}
+.dot1{
+    height:3px;
+    width:3px;
+    background-color:#0d74a2;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    /* left:29px; */
+    grid-column: 1/2;
+    grid-row: 1/1;
+}
+.dot2{
+    height:3px;
+    width:3px;
+    background-color: #0d74a2;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.dot3{
+    height:3px;
+    width:3px;
+    background-color: #0d74a2;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    grid-column: 3/4;
+    grid-row: 3/3;
+}
+
+.buttons-grid{
+    display: grid;
+    grid-template-columns: 90px 1fr 1fr 1fr;
+    justify-items: start;
+}
+
+.main-buttons{
+    padding:10px;
+    background-color: #041c32;
+    border: 1px solid  #0d74a2;;
+    color:white;
+    width: 200px;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.but1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.but2{
+    grid-column: 3/4;
+    grid-row: 1/2;
+
+}
+.main-buttons:hover{
+    color: #0d74a2;
+    cursor: pointer;
 }
