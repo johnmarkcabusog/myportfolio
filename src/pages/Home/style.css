@@ -15,14 +15,13 @@
 }
 
 .general-information{
-    /* display: none; */
-    /* animation: showNow 5.2s ; */
+    animation: showNow 5.2s ;
 
 }    
-/* @keyframes showNow {
+@keyframes showNow {
     0% { opacity: 0;}
     100% { opacity: 1; }
-  } */
+  }
 .gen-info-panel{
     display: grid;
     grid-template-columns: 1fr;
@@ -64,7 +63,7 @@
 .dev-message{
     grid-column: 4/5;
     grid-row: 3/4;
-
+    font-size: 18px;
 }
 
 .line1{
@@ -72,7 +71,6 @@
     grid-row: 1/4;
     width: 1px;
     background-color: rgb(25, 54, 54);
-    margin-left: 20px;
 }
 
 .line3{
@@ -80,7 +78,6 @@
     grid-row: 3/4;
     width: 1px;
     background-color: rgb(25, 54, 54);
-    margin-left: 20px;
 
 }
 
@@ -89,8 +86,6 @@
     grid-row: 2/4;
     width: 1px;
     background: rgb(25, 54, 54);
-    margin-left: 20px;
-
 }
 .dot1{
     height:3px;
