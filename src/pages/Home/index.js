@@ -7,7 +7,7 @@ import './polygon.css';
 const Home = () =>{
     return(
         <Fragment>
-            <div className="home-container">
+            <div id="home" className="home-container">
                  <div className="el general-information"><GeneralInformation/></div> 
                 <div className='el polygons'> <Polygons/></div>
             </div>

@@ -7,7 +7,7 @@ const GeneralInformation = () => {
         <div className="dev-name">
           <span>I'm</span> JOHN MARK,
         </div>
-        <div className="dev-title">Software Engineer</div>
+        <div className="dev-title">Software Engineer </div>
         <div className="dev-message">
           I develop performant and robust software solutions for businesses.{" "}
           <br /> I do full stack development and I have great interests in GIS

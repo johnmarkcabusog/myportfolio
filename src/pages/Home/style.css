@@ -1,11 +1,11 @@
 .home-container {
-    margin-top: 100px;
-    height: 600px;
+    min-height: 100vh;
     display: flex;
     color: black;
     align-items: center;
+    padding:0px 200px;
      /* cross-axis alignment or vertically */
-    justify-content: center; 
+    justify-content: flex-start; 
      /* main-axis alignment or horizontally */
      /* gap:30px;  */
     /* margin between the flex items */
@@ -15,12 +15,14 @@
 }
 
 .general-information{
-    animation: showNow 3.2s ;
-}
-@keyframes showNow {
+    /* display: none; */
+    /* animation: showNow 5.2s ; */
+
+}    
+/* @keyframes showNow {
     0% { opacity: 0;}
     100% { opacity: 1; }
-  }
+  } */
 .gen-info-panel{
     display: grid;
     grid-template-columns: 1fr;
@@ -126,6 +128,7 @@
     display: grid;
     grid-template-columns: 90px 1fr 1fr 1fr;
     justify-items: start;
+    gap:30px;
 }
 
 .main-buttons{
