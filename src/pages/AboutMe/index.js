@@ -10,10 +10,10 @@ const AboutMe = () => {
     <div id="about-me">
       <div className="line"><span className="dot"></span></div>
       <div className="content">
-        <div class="section-title">Who am I ?</div>
-        <div class="content-div">
+        <div clasName="section-title">Who am I ?</div>
+        <div className="content-div">
           <div className="prof-pic-container"><img className="profile-pic" src={profilepic} alt="profile-pic"/></div>
-          <div class="profile-info">
+          <div className="profile-info">
             <p>
               ¿Como estas? How are You?.In tagalog it’s <span> Kumusta</span>. <br/>I’m a software
               engineer in the Philippines, who writes code and poetry. <br/>Welcome to

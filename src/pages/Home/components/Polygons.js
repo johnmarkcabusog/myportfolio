@@ -9,7 +9,7 @@ const PolygonItem = ()=>{
 }
 const Polygons = () => {
   return (
-      <div class="polygon-container">
+      <div className="polygon-container">
         <PolygonItem/>
       </div>
   );

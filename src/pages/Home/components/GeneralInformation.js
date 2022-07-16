@@ -15,13 +15,13 @@ const GeneralInformation = () => {
           <br /> mobile and game development.
         </div>
         <div className="line1">
-          <span class="dot1"></span>
+          <span className="dot1"></span>
         </div>
         <div className="line2">
-          <span class="dot2"></span>
+          <span className="dot2"></span>
         </div>
         <div className="line3">
-          <span class="dot3"></span>
+          <span className="dot3"></span>
         </div>
       </div>
       <div className="buttons-grid">

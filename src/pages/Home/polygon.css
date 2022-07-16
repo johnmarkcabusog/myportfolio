@@ -158,28 +158,6 @@
     pointer-events: none;
     
 }
-/* .polygon-container > div:nth-child(36),
-.polygon-container > div:nth-child(37),
-.polygon-container > div:nth-child(38),
-.polygon-container > div:nth-child(39),
-.polygon-container > div:nth-child(40)
-{
-    width: var(--bigger-s);
-    background-color: #0d74a2;;
-    height: calc(var(--bigger-s)*1.1547); 
-}  */
-
-/* .polygon-container > div:nth-child(36):hover,
-.polygon-container > div:nth-child(37):hover,
-.polygon-container > div:nth-child(38):hover,
-.polygon-container > div:nth-child(39):hover,
-.polygon-container > div:nth-child(40):hover
-{
-    width: var(--biggest-s);
-    height: calc(var(--biggest-s)*1.1547); 
-    cursor: pointer;
-}  */
-
 
 @keyframes fadeIn {
     0% { opacity: 0; background-color:rgb(70, 70, 70,0.7) ;}
