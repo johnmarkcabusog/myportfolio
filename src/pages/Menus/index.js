@@ -15,7 +15,7 @@ const Menu = () => {
       {showMenu && (
         <>
           <a href="#home" className="nav-menu">Home</a>
-          <a href="#about-me" className="nav-menu">Who am I?</a>
+          <a href="#about-me" className="nav-menu">About</a>
           <a href="#experiences" className="nav-menu">Experiences</a>
           <a href="#software-creations" className="nav-menu">Software Works</a>
           <a href="#creative-works" className="nav-menu">Creative Works</a>

@@ -8,7 +8,7 @@ const Home = () =>{
     return(
         <Fragment>
             <div id="home" className="home-container">
-                 <div className="el general-information"><GeneralInformation/></div> 
+                <div className="el general-information"><GeneralInformation/></div> 
                 <div className='el polygons'> <Polygons/></div>
             </div>
         </Fragment>

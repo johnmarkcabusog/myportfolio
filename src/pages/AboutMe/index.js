@@ -9,15 +9,15 @@ const AboutMe = () => {
   return (
     <div id="about-me">
       <div className="line"><span className="dot"></span></div>
-      <div className="content">
-        <div clasName="section-title">Who am I ?</div>
+      <div className="content-about">
+        <div className="section-title">About</div>
         <div className="content-div">
           <div className="prof-pic-container"><img className="profile-pic" src={profilepic} alt="profile-pic"/></div>
           <div className="profile-info">
             <p>
-              ¿Como estas? How are You?.In tagalog it’s <span> Kumusta</span>. <br/>I’m a software
-              engineer in the Philippines, who writes code and poetry. <br/>Welcome to
-              my personal website!- a collection of my software works <br/>and a bit
+              ¿Como estas? How are You?. In tagalog it’s <span> Kumusta</span>. I’m a software
+              engineer in the Philippines who writes code and poetry. Welcome to
+              my personal website!- a collection of my software works and a bit
               of my creative works.
             </p>
             <p>
@@ -25,7 +25,7 @@ const AboutMe = () => {
             </p>
             <div className="tech-list">
                 {skillset.map(skill=>{
-                    return(<div><FontAwesomeIcon className="tech-chevron" icon={`chevron-right`} />{skill}</div>)
+                    return(<div key={skill}><FontAwesomeIcon className="tech-chevron" icon={`chevron-right`} />{skill}</div>)
                 })}
             </div>
           </div>

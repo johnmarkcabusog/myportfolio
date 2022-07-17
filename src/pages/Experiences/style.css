@@ -1,3 +1,88 @@
-.experience-body{
-    height: 60vh;
+#experiences{
+    display: flex;
+    align-items: flex-start;
+    justify-content: stretch;
+    padding: 100px 20% 100px 10%;
+    gap:30px;
+    min-height: 50vh;
+}
+
+.line-experience{
+    width: 1px;
+    background-color: rgb(25, 54, 54);
+    align-self: stretch;
+}
+
+
+.dot-experience{
+    height:3px;
+    width:3px;
+    background-color:#0d74a2;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.content-experience{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap:5px;
+
+}
+.tab-header{
+    color: black;
+    display: flex;
+    font-size: 20px;
+    color:#0d74a2;
+    height:100px;
+    align-items: center;
+    text-align: center;
+    padding-left: 100px;
+}
+.experience-info{
+    padding-left: 100px;
+}
+
+.companies:first-child{
+    flex-grow: 1;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.companies:first-child:hover{
+    color:whitesmoke;
+}
+
+
+.companies:last-child{
+    flex-grow: 1;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+.companies:last-child:hover{
+    color: whitesmoke;
+}
+
+.job-title {
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+}
+.date-range{
+    color: #0d74a2;
+    font-size:20px;
+    font-weight: bold;
+}
+.role {
+    color: #d6d5a8;
+    font-size: 20px;
+    line-height: 1.6;
+
+}
+.selected{
+    border-bottom: 2px solid #0d74a2;
+    color: whitesmoke;
+    font-weight: bold;
 }

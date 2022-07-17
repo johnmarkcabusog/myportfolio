@@ -1,3 +1,50 @@
-.creative-body{
-    height: 60vh;
+#creative-works{
+    background-image: url("./assets/creative-bg.png");
+    min-height: 70vh;
+    background-color: #d6d5a8;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #041c32;
+    font-family: 'Caveat', cursive;
+    flex-direction: column;
+    gap:20px;
+    padding-bottom: 3%;    
 }
+.poem-accordion{
+    font-size: 30px;
+    width: 50%;
+    text-align: center;
+    white-space: pre-line;
+    height: 300px;
+}
+
+.creative-intro{
+    font-size: 35px;
+}
+.creative-bullet{
+    height: 10px;
+    width:10px;
+    border-radius: 50%;
+    border: 1px solid  #041c32;
+    display: inline-block;
+    margin: 2px;
+    cursor: pointer;
+}
+.creative-bullet:hover{
+    background-color:  #041c32;
+    opacity: 0.5;
+}
+.piece-title{
+    padding-top: 10px;
+    font-weight: bold;
+}
+.create-bullet-section .selected{
+    background-color:  #041c32;
+}
+/* .creative-body{
+    font-size: 30px ;
+    margin-top: 15% ;
+ 
+} */
