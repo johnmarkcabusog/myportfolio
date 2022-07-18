@@ -23,16 +23,12 @@ const work_excerpts = [
 ];
 const CreativeWorks = () => {
   const [currentPoem, setSelectCurrentPoem] = useState(1);
-  
+
   useEffect(() => {
     let interval_id = setInterval(() => {
       if(currentPoem === work_excerpts.length){
-        console.log("LMIT", currentPoem)
-
         setSelectCurrentPoem(1);
       } else {
-        console.log("NORMAL ADD", currentPoem)
-
         setSelectCurrentPoem(currentPoem+1)
       }
     }, 6000);
