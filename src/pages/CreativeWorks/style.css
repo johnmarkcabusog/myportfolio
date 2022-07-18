@@ -12,14 +12,21 @@
     gap:20px;
     padding-bottom: 3%;    
 }
+
 .poem-accordion{
     font-size: 30px;
     width: 50%;
     text-align: center;
     white-space: pre-line;
     height: 300px;
+    display: none;
 }
 
+ .selected-excerpt{
+    display: block;
+    animation: fadeInWork 3s;
+    
+}
 .creative-intro{
     font-size: 35px;
 }
@@ -40,7 +47,7 @@
     padding-top: 10px;
     font-weight: bold;
 }
-.create-bullet-section .selected{
+.create-bullet-section .selected-poem-bullet{
     background-color:  #041c32;
 }
 /* .creative-body{
