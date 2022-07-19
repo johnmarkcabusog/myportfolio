@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faCheckSquare, faCoffee, faChevronDown, faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
-library.add( faChevronDown, faCheckSquare, faCoffee, faChevronLeft, faChevronRight )
+import {faGithub} from '@fortawesome/free-brands-svg-icons'
+library.add( faChevronDown, faCheckSquare, faCoffee, faChevronLeft, faChevronRight, faGithub )
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
