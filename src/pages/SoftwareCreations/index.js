@@ -1,24 +1,31 @@
 import React, { useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import VispImage from "./assets/visp.png";
-
+import VispImage from "./assets/visp-mapping.png";
+import VispImage2 from "./assets/visp-dashboard.png";
+import VispImage3 from "./assets/visp.png";
 
 const works = [
   {
     id: 1,
     name: "Visp.net",
-    img_src:  VispImage,
+    img_src: VispImage,
+    description:"Visp.net is an automated billing system designed for Internet Service Providers. Most of my works deal with the Equipment and Mapping Tools inside the system, such as coverage detection based on tower location, AP/Antenna configuration and customer location",
+    tech_used:"(Material UI, Redux, ReactJS, Apollo GraphQL, MySQL, PostgreSQL)"
   },
   {
     id: 2,
     name: "Word Game",
-    img_src: "",
+    img_src: VispImage2,
+    description:"",
+    tech_used:""
   },
   {
     id: 3,
     name: "Mapping",
-    img_src: "",
+    img_src: VispImage3,
+    description:"",
+    tech_used:""
   },
 ];
 const SoftwareCreations = () => {
@@ -29,7 +36,7 @@ const SoftwareCreations = () => {
   //   setSelectSlide(currentSlide + 1);
   // }, 3000);
 
-  console.log("CUrrent slide", currentSlide)
+  console.log("CUrrent slide", currentSlide);
 
   const handleBack = () => {
     if (currentSlide === 1) {
@@ -56,26 +63,30 @@ const SoftwareCreations = () => {
         <div className="section-title">Software Creations</div>
         <div className="software-body">
           {works.map((work) => {
-            console.log(work.name, work.img_src,"===", VispImage
-              )
             return (
               <div
                 className={`${
-                  currentSlide === work.id ? "selected" : "content"
+                  currentSlide === work.id ? "selected-software" : "content"
                 }`}
               >
-                <img src={work.img_src} alt="visp" className="work-image"/>
+                <img src={work.img_src} alt="visp" className="work-image" />
                 {/* {work.name} */}
+                <div className="info-panel">
+                  <div className="software-name">{work.name}</div>
+                  <div className="software-desc">{work.description}</div>
+                  <div className="software-tech">{work.tech_used}</div>
+                </div>
               </div>
             );
           })}
-          {/* <div className={`conten1 ${cur}`}>{selectedWork.name}</div> */}
-          <button className="carousel-but back" onClick={handleBack}>
+          <div className="cover"></div>
+          <div className="navigator navigate-left" onClick={handleBack}>
             <FontAwesomeIcon icon={`chevron-left`} />
-          </button>
-          <button className="carousel-but next" onClick={handleForward}>
+          </div>
+          <div className="navigator navigate-right" onClick={handleForward}>
             <FontAwesomeIcon icon={`chevron-right`} />
-          </button>
+          </div>
+         
         </div>
       </div>
     </div>

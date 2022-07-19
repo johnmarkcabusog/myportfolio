@@ -8,7 +8,7 @@
     bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap:10px;
+    gap:5px;
     animation: menuAnimation 3s;
   }
 @keyframes menuAnimation{
@@ -18,13 +18,13 @@
 .nav-menu {
     text-align: end;
     margin-right: 30px;
-    color: #d6d5a8;
+    color: #00a4a6;
     cursor: pointer;
     text-decoration: none;
 }
 
 .nav-menu:hover{
-    color: white;
+    color: #00ffff;
 }
 .nav-menu:first-child{
     text-align: end;

@@ -9,8 +9,8 @@
     color: #041c32;
     font-family: 'Caveat', 'cursive';
     flex-direction: column;
-    gap:20px;
-    padding-bottom: 3%;    
+    gap:10px;
+    padding-bottom: 1%;    
 }
 
 .poem-accordion{

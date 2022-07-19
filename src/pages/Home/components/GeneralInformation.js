@@ -25,7 +25,7 @@ const GeneralInformation = () => {
         </div>
       </div>
       <div className="buttons-grid">
-        <a className="main-buttons but1" href="#">Message Me </a>
+        <div className="main-buttons but1" >Message Me </div>
         <a className="main-buttons but2" href="#software-creations"> Explore My Works </a>
       </div>
     </div>
