@@ -90,7 +90,6 @@
     border-radius: 50%;
     display: inline-block;
     position: absolute;
-    /* left:29px; */
     grid-column: 1/2;
     grid-row: 1/1;
 }

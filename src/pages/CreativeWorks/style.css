@@ -7,7 +7,7 @@
     align-items: center;
     justify-content: flex-end;
     color: #041c32;
-    font-family: 'Caveat', cursive;
+    font-family: 'Caveat', 'cursive';
     flex-direction: column;
     gap:20px;
     padding-bottom: 3%;    
@@ -50,8 +50,3 @@
 .create-bullet-section .selected-poem-bullet{
     background-color:  #041c32;
 }
-/* .creative-body{
-    font-size: 30px ;
-    margin-top: 15% ;
- 
-} */
