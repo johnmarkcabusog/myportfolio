@@ -4,7 +4,6 @@
     color: black;
     align-items: center;
     justify-content: center; 
-    padding-right: 10%;
 }
 .polygons{
     transform: scale(0.8);

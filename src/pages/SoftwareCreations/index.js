@@ -71,6 +71,7 @@ const SoftwareCreations = () => {
           {works.map((work) => {
             return (
               <div
+                key={work.id}
                 className={`${
                   currentSlide === work.id ? "selected-software" : "content"
                 }`}

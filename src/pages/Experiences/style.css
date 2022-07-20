@@ -1,10 +1,12 @@
 #experiences{
     display: flex;
     align-items: flex-start;
-    justify-content: stretch;
-    padding: 100px 20% 100px 10%;
+    justify-content: center;
+    padding-top: 10%;
+    font-size:20px;
     gap:30px;
-    min-height: 50vh;
+    padding: 5% 0% 5% 0%;
+    min-height: 60vh;
 }
 
 .line-experience{
@@ -26,7 +28,7 @@
 .content-experience{
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 70%;
     gap:5px;
 
 }
@@ -85,4 +87,20 @@
     border-bottom: 2px solid #0d74a2;
     color: whitesmoke;
     font-weight: bold;
+}
+
+@media (max-width: 780px) {
+    .line-experience{
+    display: none;
+    }
+    
+    .dot-experience{
+        display: none;
+
+    }.tab-header{
+        padding-left: 0px;
+    }
+    .experience-info{
+        padding-left: 0px;
+    }
 }
