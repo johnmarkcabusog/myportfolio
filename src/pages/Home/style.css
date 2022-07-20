@@ -121,7 +121,7 @@
 }
 
 .main-buttons{
-    padding:10px;
+    padding:10px 0px 10px 0px;
     background-color: #041c32;
     border: 1px solid  #0d74a2;;
     color:whitesmoke;

@@ -103,4 +103,9 @@
     .experience-info{
         padding-left: 0px;
     }
+    .content-experience{
+        width: 100%;
+        padding: 2%;
+    
+    }
 }
