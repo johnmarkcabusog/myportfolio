@@ -3,8 +3,8 @@
     display: flex;
     color: black;
     align-items: center;
-    padding-left: 10%;
-    justify-content: flex-start; 
+    justify-content: center; 
+    padding-right: 10%;
 }
 .polygons{
     transform: scale(0.8);
@@ -126,7 +126,7 @@
     background-color: #041c32;
     border: 1px solid  #0d74a2;;
     color:whitesmoke;
-    width: 200px;
+    width: 100%;
     grid-column: 2/3;
     grid-row: 1/2;
 }
@@ -155,4 +155,38 @@
     .polygons{
         display: none;
     }
+}
+
+@media (max-width: 670px){
+   .line1,.line2,.line3,.dot1,.dot2,.dot3{
+       display: none;
+   }
+    .gen-info-content{
+        display: flex;
+        gap: 10px;
+        color: #d6d5a8;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .buttons-grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: start;
+        gap:30px;
+    }
+    .but1{
+        grid-column: 1/2;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+    }
+    .but2{
+        grid-column:2/3;
+        text-decoration: none;
+        font-size: 18px;
+        text-align: center;
+    }
+    
 }
