@@ -60,11 +60,11 @@
   }
 
   .creative-intro {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .poem-accordion {
-    font-size: 20px;
+    font-size: 18px;
     width: 100%;
     text-align: center;
     white-space: pre-line;
@@ -79,6 +79,9 @@
 
 @media (max-width: 341px) {
   .creative-intro {
+    font-size: 18px;
+  }
+  .poem-accordion {
     font-size: 16px;
   }
 }
