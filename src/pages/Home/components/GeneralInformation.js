@@ -1,6 +1,13 @@
 import React from "react";
 
 const GeneralInformation = () => {
+  const emailClicked = () => {
+    const receiver = "johnmarkcabusog@gmail.com";
+    const subject = "Software Development Request";
+    const message = "Hi John,";
+    window.location.href = `mailto:${receiver}?subject=${subject}&body=${message}`;
+  };
+
   return (
     <div className="gen-info-panel">
       <div className="gen-info-content">
@@ -25,8 +32,13 @@ const GeneralInformation = () => {
         </div>
       </div>
       <div className="buttons-grid">
-        <div className="main-buttons but1" >Message Me </div>
-        <a className="main-buttons but2" href="#software-creations"> Explore My Works </a>
+        <div className="main-buttons but1" onClick={emailClicked}>
+          Message Me{" "}
+        </div>
+        <a className="main-buttons but2" href="#software-creations">
+          {" "}
+          Explore My Works{" "}
+        </a>
       </div>
     </div>
   );

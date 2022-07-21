@@ -109,3 +109,9 @@
     
     }
 }
+
+@media (max-width:341px) {
+    .role {
+        font-size: 16px;
+    }
+}

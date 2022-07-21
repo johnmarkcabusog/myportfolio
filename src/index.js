@@ -1,14 +1,33 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { faCheckSquare, faCoffee, faChevronDown, faChevronLeft, faChevronRight} from '@fortawesome/free-solid-svg-icons'
-import {faGithub} from '@fortawesome/free-brands-svg-icons'
-library.add( faChevronDown, faCheckSquare, faCoffee, faChevronLeft, faChevronRight, faGithub )
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faCheckSquare,
+  faCoffee,
+  faChevronDown,
+  faChevronLeft,
+  faChevronRight,
+  faEye,
+  faMessage
+} from "@fortawesome/free-solid-svg-icons";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+library.add(
+  faChevronDown,
+  faCheckSquare,
+  faCoffee,
+  faChevronLeft,
+  faChevronRight,
+  faGithub,
+  faEye,
+  faLinkedin,
+  faMessage
+);
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />

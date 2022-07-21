@@ -10,28 +10,35 @@ const works = [
     id: 1,
     name: "Visp.net",
     img_src: VispImage,
-    description:"Visp.net is an automated billing system designed for Internet Service Providers. Most of my works deal with the Equipment and Mapping Tools inside the system, such as coverage detection based on tower location, AP/Antenna configuration and customer location",
-    tech_used:"(Material UI, Redux, ReactJS, Apollo GraphQL, MySQL, PostgreSQL)",
-    repository:"",
-    link:""
+    description:
+      "Visp.net is an automated billing system designed for Internet Service Providers. Most of my works deal with the Equipment and Mapping Tools inside the system, such as coverage detection based on tower location, AP/Antenna configuration and customer location",
+    tech_used:
+      "(Material UI, Redux, ReactJS, Apollo GraphQL, MySQL, PostgreSQL)",
+    repository: "",
+    link: "",
+    isPersonal: false,
   },
   {
     id: 2,
     name: "Word Game",
     img_src: VispImage2,
-    description:"",
-    tech_used:"",
-    repository:"",
-    link:""
+    description:
+      "This word game is a ripped-off of the famous game called Wordle.",
+    tech_used: "(ReactJS, HTML & CSS)",
+    repository: "",
+    link: "",
+    isPersonal: true,
   },
   {
     id: 3,
     name: "Mapping Game",
     img_src: VispImage3,
-    description:"",
-    tech_used:"",
-    repository:"",
-    link:""
+    description:
+      "Mapping game is a geographical quiz that tests your knowledge about history, culture and geography",
+    tech_used: "(ReactJS, HTML & CSS)",
+    repository: "",
+    link: "",
+    isPersonal: true,
   },
 ];
 const SoftwareCreations = () => {
@@ -82,22 +89,33 @@ const SoftwareCreations = () => {
                   <div className="software-name">{work.name}</div>
                   <div className="software-desc">{work.description}</div>
                   <div className="software-tech">{work.tech_used}</div>
-                  <div className="software-resources">
-                    <FontAwesomeIcon className="tech-chevron" icon="fa-brands fa-github" />
-                  </div>
-
+                  {work.isPersonal ? (
+                    <div className="software-resources">
+                      <FontAwesomeIcon
+                        className="tech-icon"
+                        icon="fa-brands fa-github"
+                      />
+                      <FontAwesomeIcon
+                        className="tech-icon"
+                        icon="fa-solid fa-eye"
+                      />
+                    </div>
+                  ) : (
+                    <div className="personal-message">
+                      [Repository and Live Demo are not available due to the
+                      company's confidentiality and ownership rights]
+                    </div>
+                  )}
                 </div>
               </div>
             );
           })}
-          <div className="cover"></div>
           <div className="navigator navigate-left" onClick={handleBack}>
             <FontAwesomeIcon icon={`chevron-left`} />
           </div>
           <div className="navigator navigate-right" onClick={handleForward}>
             <FontAwesomeIcon icon={`chevron-right`} />
           </div>
-         
         </div>
       </div>
     </div>
