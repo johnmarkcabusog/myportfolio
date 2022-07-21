@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import VispImage from "./assets/visp-mapping.png";
@@ -43,13 +43,20 @@ const works = [
 ];
 const SoftwareCreations = () => {
   const [currentSlide, setSelectSlide] = useState(1);
-
-  // const selectedWork = works.find(x=> x.id === currentSlide);
-  // setTimeout(()=>{
-  //   setSelectSlide(currentSlide + 1);
-  // }, 3000);
-
-  console.log("CUrrent slide", currentSlide);
+  const [interrupted, setInterrupted] = useState(false);
+  useEffect(()=>{
+    const interval = setInterval(() => {
+      if(!interrupted){
+        if (currentSlide === works.length) {
+          setSelectSlide(1);
+        } else {
+          setSelectSlide(currentSlide + 1);
+        }
+      }
+    
+    }, 6000);
+    return ()=> clearInterval(interval)
+  }, [currentSlide, interrupted])
 
   const handleBack = () => {
     if (currentSlide === 1) {
@@ -57,6 +64,7 @@ const SoftwareCreations = () => {
     } else {
       setSelectSlide(currentSlide - 1);
     }
+    setInterrupted(true)
   };
 
   const handleForward = () => {
@@ -65,6 +73,7 @@ const SoftwareCreations = () => {
     } else {
       setSelectSlide(currentSlide + 1);
     }
+    setInterrupted(true)
   };
 
   return (
@@ -84,8 +93,7 @@ const SoftwareCreations = () => {
                 }`}
               >
                 <img src={work.img_src} alt="visp" className="work-image" />
-                {/* {work.name} */}
-                <div className="info-panel">
+                <div className="info-panel ">
                   <div className="software-name">{work.name}</div>
                   <div className="software-desc">{work.description}</div>
                   <div className="software-tech">{work.tech_used}</div>
@@ -102,8 +110,8 @@ const SoftwareCreations = () => {
                     </div>
                   ) : (
                     <div className="personal-message">
-                      [Repository and Live Demo are not available due to the
-                      company's confidentiality and ownership rights]
+                      [Repository and Live Demo are not available due to
+                      company's ownership rights]
                     </div>
                   )}
                 </div>
@@ -116,6 +124,15 @@ const SoftwareCreations = () => {
           <div className="navigator navigate-right" onClick={handleForward}>
             <FontAwesomeIcon icon={`chevron-right`} />
           </div>
+        </div>
+        <div className="bullet-software-parent">
+          {works.map(work=>{
+            return(
+              <div className={`${
+                currentSlide === work.id ? "selected" : ""
+              }`}></div>
+            )
+          })}
         </div>
       </div>
     </div>

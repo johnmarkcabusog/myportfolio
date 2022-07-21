@@ -23,17 +23,20 @@ const work_excerpts = [
 ];
 const CreativeWorks = () => {
   const [currentPoem, setSelectCurrentPoem] = useState(1);
+  const [interrupted, setInterrupted] = useState(false);
 
   useEffect(() => {
     let interval_id = setInterval(() => {
-      if(currentPoem === work_excerpts.length){
-        setSelectCurrentPoem(1);
-      } else {
-        setSelectCurrentPoem(currentPoem+1)
+      if (!interrupted) {
+        if (currentPoem === work_excerpts.length) {
+          setSelectCurrentPoem(1);
+        } else {
+          setSelectCurrentPoem(currentPoem + 1);
+        }
       }
     }, 6000);
     return () => clearInterval(interval_id);
-  }, [currentPoem]);
+  }, [currentPoem,interrupted]);
 
   return (
     <div id="creative-works">
@@ -56,23 +59,30 @@ const CreativeWorks = () => {
             <div
               key={index}
               className={`creative-bullet ${
-                w.id === currentPoem ? "selected-poem-bullet" : ""
+                w.id === currentPoem ? "selected" : ""
               }`}
-              onClick={() => setSelectCurrentPoem(w.id)}
+              onClick={() => {
+                setSelectCurrentPoem(w.id);
+                setInterrupted(true);
+              }}
             ></div>
           );
         })}
       </div>
-      
-      {work_excerpts.map((w, index)=>{
-        return(
-          <div key={index} className={`poem-accordion ${w.id === currentPoem?'selected-excerpt':''}`}>
+
+      {work_excerpts.map((w, index) => {
+        return (
+          <div
+            key={index}
+            className={`poem-accordion ${
+              w.id === currentPoem ? "selected-excerpt" : ""
+            }`}
+          >
             {w.excerpt}
             <div className="piece-title">- {w.title}</div>
-          </div> 
-        )
+          </div>
+        );
       })}
-
     </div>
   );
 };

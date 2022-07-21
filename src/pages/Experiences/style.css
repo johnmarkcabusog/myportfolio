@@ -83,7 +83,7 @@
     line-height: 1.6;
 
 }
-.selected{
+.tab-header .selected{
     border-bottom: 2px solid #0d74a2;
     color: whitesmoke;
     font-weight: bold;

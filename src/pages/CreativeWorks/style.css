@@ -33,10 +33,10 @@
   text-align: center;
 }
 .creative-bullet {
-  height: 10px;
-  width: 10px;
+  height: 5px;
+  width: 5px;
   border-radius: 50%;
-  border: 1px solid #041c32;
+  background-color: whitesmoke;
   display: inline-block;
   margin: 2px;
   cursor: pointer;
@@ -49,7 +49,7 @@
   padding-top: 10px;
   font-weight: bold;
 }
-.create-bullet-section .selected-poem-bullet {
+.create-bullet-section .selected {
   background-color: #041c32;
 }
 
