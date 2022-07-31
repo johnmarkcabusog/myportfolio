@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import VispImage from "./assets/visp-mapping.png";
-import VispImage2 from "./assets/visp-dashboard.png";
-import VispImage3 from "./assets/visp.png";
+import WordImage from "./assets/savantrush.png";
 
 const works = [
   {
@@ -21,7 +20,7 @@ const works = [
   {
     id: 2,
     name: "Word Game",
-    img_src: VispImage2,
+    img_src: WordImage,
     description:
       "This word game is a ripped-off of the famous game called Wordle.",
     tech_used: "(ReactJS, HTML & CSS)",
@@ -32,7 +31,7 @@ const works = [
   {
     id: 3,
     name: "Mapping Game",
-    img_src: VispImage3,
+    img_src: "",
     description:
       "Mapping game is a geographical quiz that tests your knowledge about history, culture and geography",
     tech_used: "(ReactJS, HTML & CSS)",
@@ -92,7 +91,9 @@ const SoftwareCreations = () => {
                   currentSlide === work.id ? "selected-software" : "content"
                 }`}
               >
-                <img src={work.img_src} alt="visp" className="work-image" />
+                {work.img_src !=="" && (
+                  <img src={work.img_src} alt="visp" className="work-image" />
+                )}
                 <div className="info-panel ">
                   <div className="software-name">{work.name}</div>
                   <div className="software-desc">{work.description}</div>
