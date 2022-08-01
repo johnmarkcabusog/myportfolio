@@ -3,6 +3,7 @@ import "./style.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import VispImage from "./assets/visp-mapping.png";
 import WordImage from "./assets/savantrush.png";
+import ThriftyTapImage from "./assets/thriftytap.png";
 
 const works = [
   {
@@ -19,17 +20,28 @@ const works = [
   },
   {
     id: 2,
-    name: "Word Game",
+    name: "Savant Rush",
     img_src: WordImage,
     description:
-      "This word game is a ripped-off of the famous game called Wordle.",
+      "Are you a savant? an intellectual, sage or master? This game is for you. This is a word game designed to test you vocabulary. Prove that you are wise! Don't rush, savant rush!",
     tech_used: "(ReactJS, HTML & CSS)",
-    repository: "",
-    link: "",
+    repository: "https://github.com/johnmarkcabusog/savant-rush",
+    link: "https://savantrush-38240.web.app/",
     isPersonal: true,
   },
   {
     id: 3,
+    name: "Thriftytap",
+    img_src: ThriftyTapImage,
+    description:
+      "Thriftytap.com is an eCommerce dropshipping website designed to sell anime assorted items as its niche",
+    tech_used: "(ReactJS, Material UI & Firebase)",
+    repository: "https://github.com/johnmarkcabusog/thriftytap/tree/master",
+    link: "https://thriftytap.web.app/",
+    isPersonal: true,
+  },
+  {
+    id: 4,
     name: "Mapping Game",
     img_src: "",
     description:
@@ -103,8 +115,18 @@ const SoftwareCreations = () => {
                       <FontAwesomeIcon
                         className="tech-icon"
                         icon="fa-brands fa-github"
+                        onClick={()=>{
+                          if(work.repository.trim() !== ""){
+                            window.open(work.repository, "_blank").focus();
+                          }
+                        }}
                       />
                       <FontAwesomeIcon
+                        onClick={()=>{
+                          if(work.link.trim() !== ""){
+                            window.open(work.link, "_blank").focus();
+                          }
+                        }}
                         className="tech-icon"
                         icon="fa-solid fa-eye"
                       />
