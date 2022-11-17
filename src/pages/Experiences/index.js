@@ -16,7 +16,7 @@ const experiences = [
     id: 2,
     company_name: "Visp.net",
     job_title: "Software Developer",
-    date_range: "(June 2017 - Present)",
+    date_range: "(June 2017 - Oct 2022)",
     roles: [
       "Developed features for a billing software utilizing various technologies including payment gateways. I was exposed to billing-related concepts including invoices,credit and debits, credit card and eCheck payments.",
       " Led a team in developing a mapping tool for identifying Internet Service Providers' (ISPs) tower area coverage and signal strength based on customer's location",
