@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import VispImage from "./assets/visp-mapping.png";
 import WordImage from "./assets/savantrush.png";
 import ThriftyTapImage from "./assets/thriftytap.png";
+import UtakImage from "./assets/utak_resto.png";
 
 const works = [
   {
@@ -42,6 +43,17 @@ const works = [
   },
   {
     id: 4,
+    name: "Restaurant Inventory System",
+    img_src: UtakImage,
+    description:
+      "Utak Resto is a restaurant inventory system that allows you to add items and keep track of price, cost and current stock",
+    tech_used: "(ReactJS, Material UI & Firebase)",
+    repository: "https://github.com/johnmarkcabusog/utakResto",
+    link: "https://utakresto.web.app/",
+    isPersonal: true,
+  },
+  {
+    id: 5,
     name: "Mapping Game",
     img_src: "",
     description:
