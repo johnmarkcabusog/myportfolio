@@ -18,7 +18,9 @@ const experiences = [
     job_title: "Software Developer",
     date_range: "(June 2017 - Oct 2022)",
     roles: [
-      "Developed features for a billing software utilizing various technologies including payment gateways. I was exposed to billing-related concepts including invoices,credit and debits, credit card and eCheck payments.",
+      "Worked on various internal and main systems. I integrated payment processing gateway called Stripe to the company's legacy desktop software that's written in Java (Frontend), PHP (Backend) and MySQL as its Relational DB.",
+      "I was exposed to billing-related concepts including invoices,credit and debits, credit card and eCheck payments.",
+      "Part of the feature creation, bug-fixing process and maintenance our customer portal website written in PHP and JQuery",
       " Led a team in developing a mapping tool for identifying Internet Service Providers' (ISPs) tower area coverage and signal strength based on customer's location",
       "Created automated testing for codes using Jest and Mocha",
     ],

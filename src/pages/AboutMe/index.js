@@ -3,7 +3,7 @@ import "./style.css";
 import profilepic from "./asset/profile-pic.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-const skillset=['React.js', 'Node.js','Apollo GraphQL', 'Javascript ES6+', 'HTML and CSS', 'Redux.js','Java', 'Leaflet.js', 'Material UI']
+const skillset=['Java','PHP','Javascript','React.js', 'Node.js','GraphQL', 'HTML and CSS', 'Redux.js', 'Material UI']
 const AboutMe = () => {
 
   return (
